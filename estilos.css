@@ -1,0 +1,148 @@
+/* Estilos generales */
+
+*{
+	font-family: cursive;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #f7f7f7;
+	color: #121212;
+   
+}
+
+
+h1{
+	font-weight: 600;
+
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+/* Estilos del encabezado */
+
+header {
+	background-color: #cecece ;
+	padding: 20px;
+	box-shadow: 0 2px 4px #242121c3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+header h1 {
+	font-size: 36px;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+nav {
+	display: inline-block;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	margin-right: 23px;
+}
+
+li:last-child {
+	margin-right: 0px;
+}
+
+nav a {
+	display: inline-block;
+	position: center;
+	padding: 10px 16px;
+	transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #0a090979;
+	color: #fff;
+}
+
+header .busqueda{
+    float: right;	
+}
+
+header .busqueda input{
+    display: inline-block;
+    width: 200px;
+    border: none;
+    background-color: rgb(167, 167, 167);
+    padding: 10px 10px;
+    outline: none;
+    color: #090909;
+    border-right: 3px;
+    transition: .5s;
+    opacity: 0;
+}
+
+header .busqueda:hover input{
+    opacity: 1;
+}
+
+header .busqueda i{
+    cursor: pointer;
+}
+
+/* Estilos de la galería */
+
+main {
+	max-width: 1200px;
+	margin: 100px auto 0;
+	padding: 0 20px;
+}
+
+#galeria {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+}
+
+.imagen {
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(64, 59, 59, 0.477);
+	border-radius: 20PX;
+}
+
+.imagen:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.imagen:hover {
+filter: blur(1px);
+}
+.imagen img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-height: 100%;
+	min-width: 100%;
+	max-width: none;
+    width: 100%;
+	height: auto;
+}
+

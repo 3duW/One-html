@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coliseo Roma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--clase navbar-->
+  <nav class="navbar">
+    <h1 class="logo">MARVELOUS</h1>
+    <ul class="nav-links">
+      <li class="active"><a href="#"></a>Inicio</li>
+      <li><a href="#"></a>Historia</li>
+      <li><a href="#"></a>Arquitectura</li>
+      <li><a href="#"></a>Eventos</li>
+      <li><a href="#"></a>Visitas</li>
+      <li><a href="#"></a>Ubicacion</li>
+      <li class="ctn"><a href="#"></a>Contactanos</li>
+    </ul>
+   <img src="imagen/menu.png" alt="" class="menu-btn">
+  </nav>
+  <header>
+    <div class="header-content">
+      <h2>Explora El Coliseo De Roma</h2>
+      <div class="line"></div>
+      <h1>Maravilla Moderna</h1>
+      <a href="#" class="ctn">Aprende Mas</a>
+    </div>
+  </header>
+<!--Eventos-->
+<section class="Events">
+   <div class="title">
+     <h1>Eventos</h1>
+     <div class="line"></div>
+   </div>
+   <div class="row">
+     <div class="col">
+      <img src="imagen/Gladiadores.gif" alt="">
+      <h4>Gladiadores</h4>
+      <p>conocido como Anfiteatro Flavio, era un lugar emblemático para la celebración de diversos eventos y espectáculos en la antigua Roma. Se construyó en el siglo I d.C. y tenía capacidad para albergar a aproximadamente 50,000 espectadores.</p>
+      <a href="" class="ctn">Conoce mas</a>
+     </div>
+     <div class="col">
+      <img src="imagen/Caza.jpg" alt="">
+      <h4>Caza de animales</h4>
+      <p>Los combates de gladiadores eran una atracción muy popular. Los gladiadores eran luchadores entrenados que se enfrentaban en batallas a muerte o con armas simuladas.</p>
+      <a href="" class="ctn">Conoce mas</a>
+     </div>
+   </div>
+</section>
+<section class="explore">
+  <h1>Arquitectura</h1>
+  <p>Coliseo de Roma es impresionante y representa la ingeniería y el diseño avanzados de la antigua Roma</p>
+  <a href="#" class="ctn"></a>
+</section>
+  <script>
+    const menuBtn = document.querySelector(".menu-btn")
+    const navlinks = document.querySelector(".nav-links")
+
+    menuBtn.addEventListener("click",()=>{
+     navlinks.classList.toggle("mobile-menu")
+    })
+  </script>
+</body>
+</html>
